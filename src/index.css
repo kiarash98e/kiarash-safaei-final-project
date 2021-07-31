@@ -5,6 +5,9 @@ html,body,#root {
   height: 100%;
   overflow: hidden;
   font-size: 62.5%;
+  direction: rtl;
+  text-align: right;
+  font-size: 1rem;
 }
 
 *{
