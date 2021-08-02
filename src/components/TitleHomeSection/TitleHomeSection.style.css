@@ -1,0 +1,10 @@
+.cube-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-home{
+    color: #333;
+    padding-top: 2rem !important;
+}
