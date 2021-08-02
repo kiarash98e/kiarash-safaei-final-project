@@ -1,0 +1,16 @@
+.slider-item{
+    width: 100% !important;
+    height: 100% !important;
+    text-align: center;
+}
+.slider-item img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-prev{
+    font-size: 0.5rem !important;
+}
+.swiper-button-next{
+    font-size: 0.5rem !important;
+}
