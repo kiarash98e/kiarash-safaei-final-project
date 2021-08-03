@@ -1,5 +1,4 @@
 import React from 'react'
-import SwiperCore,{Navigation} from 'swiper'
 import {Swiper,SwiperSlide} from 'swiper/react'
 import {Container,Row,Col} from 'react-bootstrap'
 import 'swiper/swiper-bundle.min.css'
@@ -7,11 +6,10 @@ import { Img3 } from '../Banner/Images'
 import './ProductCarousel.style.css'
 import { FaPlus } from 'react-icons/fa'
 
-SwiperCore.use([Navigation])
 
 const style_swiper = {
     marginTop:'3rem',
-    height:'25rem'
+    height:'15rem'
 }
 
 const ProductCarouselSwiper = () => {
