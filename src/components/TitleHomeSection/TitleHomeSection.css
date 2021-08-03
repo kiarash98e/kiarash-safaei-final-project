@@ -5,6 +5,7 @@
 }
 
 .title-home{
-    color: #333;
+    color: #333 !important;
     padding-top: 2rem !important;
+    text-align: center !important;
 }

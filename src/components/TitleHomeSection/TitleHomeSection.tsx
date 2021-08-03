@@ -3,6 +3,7 @@ import { FaCube } from 'react-icons/fa'
 import SplitText from 'react-pose-text'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import './TitleHomeSection.css'
 
 interface ITitle {
     title:string
@@ -43,8 +44,8 @@ const TitleHomeSection: React.FC<ITitle> = ({title=""}) => {
                 <Col>
                     <div className="text-center">
                         <div className="row">
-                            <div className="col-12 pt-5">
-                               <h2 className="title-home" data-aos='fade-left'>
+                            <div className="col-12 pt-3">
+                               <h2 style={{color:'#333'}} className="title-home" data-aos='fade-left'>
                                     <SplitText initialPose="exit" pose="enter" wordPoses={wordPoses}>
                                         {title}
                                     </SplitText>
