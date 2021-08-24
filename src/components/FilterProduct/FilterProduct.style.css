@@ -1,0 +1,6 @@
+.price-ranges {
+    font-size: .9rem;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+  }
