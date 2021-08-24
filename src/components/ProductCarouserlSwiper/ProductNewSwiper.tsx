@@ -9,18 +9,17 @@ import {useDispatch,useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 const style_swiper = {
-    marginTop:'2rem',
+    marginTop:'3rem',
     height:'28rem'
 }
 
-const ProductCarouselSwiper = () => {
-    const products = useSelector((state:any) => state.products.Data)
+const ProductLikeSwiper = () => {
+    const  products  = useSelector((state:any) => state.products.Data)
     const dispatch = useDispatch()
-
-    
     console.log(products)
-    const TodyProduct = products.filter((product:any) => product.status.map((item:any) => item ==="جدیدترین ها"))
-    console.log(TodyProduct)
+    
+    const NewSwiper:any= products.filter((product:any) => product.status.map((item:any) => item ==="پرفروش ترین ها"))
+    
     return (
         <div>
             <Container>
@@ -60,8 +59,8 @@ const ProductCarouselSwiper = () => {
                             }}
                         >
                           {
-                            TodyProduct && 
-                            TodyProduct.map((product:any) =>(
+                            NewSwiper && 
+                            NewSwiper.map((product:any) =>(
                             <SwiperSlide key={product._id} className='swiper-item'>
                                 <Card className="rounded-3 shadow border-0 p-3">
                                   <Link to={`/products/${product._id}`}>
@@ -101,4 +100,4 @@ const ProductCarouselSwiper = () => {
     )
 }
 
-export default ProductCarouselSwiper
+export default ProductLikeSwiper
