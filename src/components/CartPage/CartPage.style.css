@@ -1,0 +1,30 @@
+.img-box{
+    height: 5rem;
+    width:5rem;
+}
+.cart-name{
+    color:#6b705c;
+}
+.cart-name span{
+    padding: 0.5rem;
+}
+
+.cart-name span:nth-child(1){
+    cursor: pointer;
+}
+.cart-name span:last-child{
+    cursor:pointer;
+}
+.border-cart{
+    border: 1px solid #6b705c;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+::-webkit-scrollbar{
+    overflow: hidden;
+}
+.btn-prdakht{
+    margin: 1rem;
+    text-align: center;
+
+}

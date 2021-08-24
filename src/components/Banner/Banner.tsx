@@ -13,7 +13,7 @@ import {Img1,Img2,Img3} from './Images'
 
 const style_swiper = {
     marginTop:'3rem',
-    height:'25rem'
+    height:'30rem'
 }
 
 

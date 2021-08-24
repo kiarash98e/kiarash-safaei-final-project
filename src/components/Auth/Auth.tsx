@@ -4,7 +4,7 @@ const Auth = () => {
     return (
         <div>
             <button className="btn btn-auth">
-                <FaUsers style={{color:'#E59C2C'}}/>
+                <FaUsers style={{color:'#ffe8d6'}}/>
             </button>
         </div>
     );
