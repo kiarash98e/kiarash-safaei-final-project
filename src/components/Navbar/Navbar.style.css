@@ -1,6 +1,6 @@
 .navbar-container{
     display: flex;
-    color: #E59C2C !important;
+    color: #ffe8d6 !important;
     width: 100%;
     margin-top: -.75rem;
 }
@@ -20,7 +20,7 @@
     align-items: center;
     margin-right: 1.5rem;
     text-decoration: none;
-    color: #E59C2C !important;
+    color: #ffe8d6 !important;
     transition: all .6s ease-in-out;
 }
 .toggle-btn{
