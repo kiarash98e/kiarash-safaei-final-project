@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #cb997e !important;
 }
 
 .title-home{
-    color: #333 !important;
+    color: #6b705c !important;
     padding-top: 2rem !important;
     text-align: center !important;
 }
