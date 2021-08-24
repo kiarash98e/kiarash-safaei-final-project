@@ -1,0 +1,20 @@
+.btn-add{
+    background-color: #4db6ac !important;
+    color: #fff !important;
+    margin-top: 2rem;
+    outline: 0;
+    height: 3rem;
+    font-size: 1rem;
+    outline: none !important;
+    transition: all .4s ease-in-out;
+}
+.btn-add:hover{
+    background-color: #009688 !important;
+}
+.btn-add:hover,.btn-cart:focus,.btn-cart:active{
+    border: 0;
+    outline: none !important;
+}
+.card-img-top img{
+    width: 100% !important;
+}

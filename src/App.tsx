@@ -1,11 +1,16 @@
+
 import React from 'react'
-import Home from './pages/Home/Home'
+import Routes from './routes/Routes'
+import ScrollToTop from './Utils/ScrollToTop'
 
 function App() {
   return (
-    <div>
-      <Home/>
-    </div>
+    <>
+      <ScrollToTop/> 
+      
+      <Routes/>
+      
+    </>
   )
 }
 

@@ -1,0 +1,41 @@
+.box-datail span{
+    font-size: 0.8rem !important;
+    display: flex !important;
+    
+   
+}
+.box-datail{
+    display: flex !important;
+    width: 10rem;
+    color:#6b705c;
+    background-color: #ffe8d6;
+    border-radius: 4px;
+    padding: 0.2rem .5rem;
+}
+select{
+    direction: ltr;
+}
+select option{
+    direction: rtl;
+}
+.border-cart{
+    border: 1px solid #6b705c;
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+}
+.btn-cart{
+    background-color: #f8edeb !important;
+    color: #1d3557 !important;
+    margin-top: 2rem;
+}
+.btn-cart:hover{
+    background-color: #fae1dd !important;
+}
+.nav-tabs li button{
+    color: #6b705c !important;
+    font-weight: bold !important;
+}
+
+.nav-tabs li button.active{
+    color: rgb(20, 214, 197) !important;
+}
