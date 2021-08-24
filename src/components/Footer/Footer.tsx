@@ -1,6 +1,7 @@
 import React from 'react';
 import {Container,Col,Row,InputGroup,FormControl} from 'react-bootstrap'
 import { FaClock,  FaEnvelope,  FaInstagram, FaLinkedin, FaMapMarker, FaPaperPlane, FaPhone, FaPinterest, FaTelegram } from 'react-icons/fa';
+import {Link} from 'react-router-dom'
 
 const bgFooter = {
     background: '#43691D',
@@ -78,15 +79,27 @@ const Footer = () => {
                             <h5>دسترسی سریع</h5>
                             <div className="d-flex flex-column pt-5">
                                 <ul className="navbar-nav">
-                                    <li className="nav-item">
-                                        <a href="/#" className="nav-link text-white">خانه</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="/#" className="nav-link text-white">فروشگاه</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a href="/#" className="nav-link text-white">سفارشات</a>
-                                    </li>
+                                    <Link to={'/'} style={{
+                                        textDecoration:"none"
+                                    }}>
+                                        <li className="nav-item">
+                                            <p  className="nav-link text-white">خانه</p>
+                                        </li>
+                                    </Link>
+                                    <Link to={'/products'} style={{
+                                        textDecoration:"none"
+                                    }}>
+                                        <li className="nav-item">
+                                            <p className="nav-link text-white">فروشگاه</p>
+                                        </li>
+                                    </Link>
+                                    <Link to={'/cart'} style={{
+                                        textDecoration:"none"
+                                    }}>
+                                        <li className="nav-item">
+                                            <p className="nav-link text-white">سفارشات</p>
+                                        </li>
+                                    </Link>
                                 </ul>
                         
                             </div>
