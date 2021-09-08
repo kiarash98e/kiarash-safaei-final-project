@@ -1,0 +1,16 @@
+
+.MuiInputLabel-formControl{
+    right: 0 !important;
+    
+  } 
+  .MuiInputLabel-shrink{
+    transform-origin: top right !important;
+    transform: translate(0,1.5px) scale(.75) !important;
+  }
+  .MuiInput{
+      background-color: transparent !important;
+      color: rgb(255, 240, 240);
+  }
+  .MuiFormHelperText-root.Mui-error {
+      text-align: right !important;
+  }
