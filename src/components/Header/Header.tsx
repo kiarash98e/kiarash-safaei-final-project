@@ -1,5 +1,5 @@
 import React from 'react';
-import {Searchbar,Auth,ProductCart,NavbarH} from '../index'
+import {Searchbar,AuthMaterial,ProductCart,NavbarH} from '../index'
 import {Container,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
                                         </Link>
                                     </div>
                                     <div style={{width:'3rem'}}>
-                                        <Auth/>
+                                        <AuthMaterial/>
                                     </div>
                                 </div>
                             </Row>

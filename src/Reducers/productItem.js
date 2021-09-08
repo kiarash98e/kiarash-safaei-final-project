@@ -38,18 +38,19 @@ const productReducr =  (state=initialState,action) => {
                )
                if (inCart) {
                    item.quantity +=1
-                   const totalChange = state.total + item.price 
+                   const totalChange = state.total + item.price
                    return{
                        ...state,
                        total:totalChange
                    }
-               }else{
+               }
+               else{
                    item.quantity = 1
-                   let newTotal = state.total + item.price 
+                   let newTotal = state.total + item.price
                    return{
                        ...state,
                        cart:[...state.cart,item],
-                       total:state.total + newTotal
+                       total:newTotal
                    }
                }
             }
@@ -84,7 +85,7 @@ const productReducr =  (state=initialState,action) => {
             )
            
             if (items.quantity === 1) {
-                let newTotal = state.total - items.price
+                let newTotal = state.total - items.price * items.quantity
                 const inCart = state.cart.filter(
                     (item) => item._id !== action.payload 
                 )
@@ -95,7 +96,7 @@ const productReducr =  (state=initialState,action) => {
                 }
             }else{
                 items.quantity -=1
-                let newTotal = state.total - items.price * items.quantity
+                let newTotal = state.total - items.price * (items.quantity)
                 return{
                     ...state,
                     total:newTotal
@@ -105,24 +106,27 @@ const productReducr =  (state=initialState,action) => {
             const item1 = state.Data.find(
                 (item) => item._id === action.payload
             )
-            item1.quantity +=1
-            let newTotal = state.total + item1.price 
-            return{
-                ...state,
-                total:newTotal
+            if (item1) {
+                item1.quantity +=1
+                let newTotal = state.total + item1.price 
+                return{
+                    ...state,
+                    total:newTotal 
+                }
             }
         case Clean_Cart:
             const itemS = state.Data.find(
                 (item) => item._id === action.payload
             )
-            let newTotalS = state.total - (itemS.price * itemS.quantity )
+            let newTotalS = state.total - (itemS.price * (itemS.quantity+1) )
+
             const inCart = state.cart.filter(
                 (item) => item._id !== action.payload 
             )
             return {
                 ...state,
                 cart: inCart,
-                total:newTotalS
+                total:newTotalS 
             }
     
         default:

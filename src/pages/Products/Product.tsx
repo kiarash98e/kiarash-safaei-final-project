@@ -4,7 +4,6 @@ import {useSelector} from 'react-redux'
 import {Header,Footer, ShowOption} from '../../components/HomeComponent'
 import Category from '../../components/Category/Category'
 import AllProduct from '../../components/AllProduct/AllProduct'
-import FilterProduct from '../../components/FilterProduct/FilterProduct'
 
 
 function Product() {
@@ -17,10 +16,8 @@ function Product() {
             <div className="py-3">
                 <Category/>
                 <div className="row">
-                    <div className="col-3">
-                        <FilterProduct/>
-                    </div>
-                    <div className="col-9">
+                    
+                    <div className="col-12">
                         
                         <AllProduct products={products}/>    
                     </div>    

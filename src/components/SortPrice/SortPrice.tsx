@@ -4,19 +4,26 @@ import {useSelector,useDispatch} from 'react-redux'
 import { FaListUl } from 'react-icons/fa'
 
 
-function SortPrice() {
+function SortPrice(props:any) {
     const dispatch = useDispatch()
     const [Value, setValue] = useState('')
     const sortProduct = useSelector((state:any) => state.products.Data)
+    console.log(sortProduct)
         const orderByFilter = (sortProduct:any, type:any ) => {
             if(!type) return sortProduct
             if(type === 'asc') {
-                return sortProduct.slice().sort((el1:any, el2:any) => el1.price - el2.price)
+                props.setOrderProduct(
+                    sortProduct.slice().sort((el1:any, el2:any) => el1.price - el2.price)
+
+                )
             } else if(type === 'desc') {
-                return sortProduct.slice().sort((el1:any, el2:any) => el2.price - el1.price)
+                props.setOrderProduct(
+                    sortProduct.slice().sort((el1:any, el2:any) => el2.price - el1.price)
+                )
+                
             }
         }
-        console.log(orderByFilter(sortProduct,'desc'))
+        
         const handleSort = (e:React.ChangeEvent<HTMLInputElement>) => {
             const val = e.target.value
             setValue(val)
@@ -37,7 +44,6 @@ function SortPrice() {
             dispatch(clearOrderBy())
             setValue('')
         }
-    console.log(Value)
     return (
         <>
             {
