@@ -7,7 +7,8 @@ import {
     Product,
     Men,
     Women,
-    Cart
+    Cart,
+    Login
 } from '../pages/page.index'
 import SingleProduct from '../pages/SingleProduct/SingleProduct'
 
@@ -22,6 +23,7 @@ function Routes() {
                 <Route exact path="/products" component={Product} />
                 <Route exact path="/cart" component={Cart} /> 
                 <Route exact path="/products/:id" component={SingleProduct} />
+                <Route exact path="/login" component={Login} />
             </Switch>
         </>
     )
